@@ -8,7 +8,7 @@ cat << "EOF"
 ╚██████╗╚██████╔╝   ██║   ███████╗██║ ╚═╝ ██║██║██║ ╚████║██████╔╝███████╗██████╔╝
  ╚═════╝ ╚═════╝    ╚═╝   ╚══════╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═════╝ 
 EOF
-echo "[CM] Running Retro AIM Server v0.16.1"
+echo "[CM] Running Retro AIM Server v0.17.0"
 echo "[CM] Log Level: $LOG_LEVEL"
 echo "[CM] Oscar Host: $OSCAR_HOST"
 echo "[CM] API Host: $API_HOST:$API_PORT"
