@@ -9,11 +9,10 @@ cat << "EOF"
  ╚═════╝ ╚═════╝    ╚═╝   ╚══════╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═════╝ 
 EOF
 echo "[CM] Running Retro AIM Server v0.17.0"
-echo "[CM] Log Level: $LOG_LEVEL"
+echo "[CM] CPU Architecture: $(uname -m)"
+echo "[CM] AIM Server Log Level: $LOG_LEVEL"
 echo "[CM] Oscar Host: $OSCAR_HOST"
 echo "[CM] API Host: $API_HOST:$API_PORT"
 echo "[CM] TOC Host: $TOC_HOST:$TOC_PORT"
-echo ""
 echo "[CM] Loading configuration..."
-
 /go/retro_aim_server
