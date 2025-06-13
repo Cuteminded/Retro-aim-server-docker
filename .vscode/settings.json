@@ -1,5 +1,4 @@
 {
     "files.eol": "\n",
-    "docker.commands.build": "${containerCommand} buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 --pull --push --rm -f \"${dockerfile}\" -t cuteminded/${tag} \"${context}\"",
-    "containers.commands.build": "${containerCommand} buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 --pull --push --rm -f \"${dockerfile}\" -t cuteminded/${tag} \"${context}\""
+    "containers.commands.build": "${containerCommand} buildx build --platform linux/amd64,linux/arm64 --pull --push --rm -f \"${dockerfile}\" -t cuteminded/${tag} \"${context}\""
 }
