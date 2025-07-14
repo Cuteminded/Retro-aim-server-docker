@@ -1,8 +1,10 @@
+# syntax=docker/dockerfile:1
+# check=skip=SecretsUsedInArgOrEnv
 FROM golang:latest
 ARG TARGETARCH
 WORKDIR /go/src/
 VOLUME [ "/go/src/" ]
-EXPOSE 5190 5191 5192 5193 5194 5195 5196 5197 8080
+EXPOSE 1088 5190 5191 5192 5193 5194 5195 5196 5197 8080
 
 RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
 COPY boot.sh /usr/bin/CMBoot
@@ -12,6 +14,7 @@ COPY bin/${TARGETARCH}/retro_aim_server /go/retro_aim_server
 
 ENV API_HOST=127.0.0.1
 ENV API_PORT=8080
+ENV KERBEROS_PORT=1088
 ENV ALERT_PORT=5194
 ENV AUTH_PORT=5190
 ENV BART_PORT=5195

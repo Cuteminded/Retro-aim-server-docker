@@ -8,7 +8,8 @@ docker run --name retro-aim-server -d cuteminded/retro-aim-server:latest
 
 ## 🔑 Environment Variables
 - ``API_HOST`` Specifies the IP address or hostname that the management API binds to
-- ``API_PORT`` The port that the management API service binds to.\
+- ``API_PORT`` The port that the management API service binds to.
+- ``KERBEROS_PORT`` The port that the Kerberos server binds to.
 - ``ALERT_PORT`` The port that the Alert service binds to.
 - ``AUTH_PORT`` The port that the auth service binds to.
 - ``BART_PORT`` The port that the BART service binds to.
@@ -37,10 +38,12 @@ services:
     restart: unless-stopped
     ports:
       - "5190-5197:5190-5197"
+      - "1088:1088"
       - "8080:8080"
     environment:
       API_HOST: "127.0.0.1"
       API_PORT: "8080"
+      KERBEROS_PORT: "1088"
       ALERT_PORT: "5194"
       AUTH_PORT: "5190"
       BART_PORT: "5195"
