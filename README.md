@@ -1,3 +1,5 @@
+> # This repository is no longer maintained.
+
 ## [Original github repository by mk6i](https://github.com/mk6i/retro-aim-server)
 **Retro AIM Server** is an open-source instant messaging server that makes classic AIM and ICQ clients work again.
 
